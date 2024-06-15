@@ -76,5 +76,5 @@ int main(int argc, const char * argv[]) {
         std::cout << "Failed to create a binary mask image." << std::endl;
     }
     
-    return 0;
+    return success;
 }
