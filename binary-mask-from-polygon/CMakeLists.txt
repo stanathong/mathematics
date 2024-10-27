@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.18)
 project(binary-mask-from-polygon)
-# without the line below, it won't work as it can't find opencv
-set(OpenCV_DIR /Users/stanathong/Dev/Library/install/lib/cmake/opencv4)
 find_package( OpenCV REQUIRED )
 find_package( Eigen3 3.3 REQUIRED NO_MODULE)
 MESSAGE(STATUS "Include dirs ${OpenCV_INCLUDE_DIRS}")
