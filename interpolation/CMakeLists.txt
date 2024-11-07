@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.28)
+project(interpolation)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(${PROJECT_NAME} ${PROJECT_NAME}/main.cpp)
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
